@@ -1,6 +1,6 @@
 var http = require('http'),
     fs = require('fs'),
-    port = process.env.port || 8000;
+    port = process.env.PORT || 8000;
 
 fs.readFile('./html/pad.html',
  function (err, html) {
