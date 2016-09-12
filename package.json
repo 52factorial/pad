@@ -1,0 +1,22 @@
+{
+  "name": "pad",
+  "version": "1.0.0",
+  "description": "(Planilha de) Acompanhamento de Desafios",
+  "main": "index.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/52fatorial/pad"
+  },
+  "keywords": [
+    "auto-desenvolvimento"
+  ],
+  "author": "Fabio Machado",
+  "license": "ISC",
+  "engines": {
+     "node": "4.5.0"
+  }
+}
