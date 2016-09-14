@@ -1,28 +1,34 @@
-html, body {
-    height: 100%;
+body {
+    margin-left: 7%;
+    margin-right: 7%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
-#wrap {
-    min-height: 100%;
+footer {
+    background-color: #666666;
+    color: white;
+    padding: 2%;
 }
 
-#main {
-    overflow:auto;
-    padding-bottom: 5%;
-}  /* must be same height as the footer */
-
-#footer {
-    position: relative;
-    margin-top: -5%; /* negative value of footer height */
-    height: 5%;
-    clear:both;
+header {
+    background-color: #333333;
+    color: #FF9900;
+    padding: 1%;
 }
 
+h1 {
+    background-color: #FF9900;
+    color: #333333;
+}
+
+nav a:link, nav a:visited {
+    color:#FF9900;
+}
+
+/* Styles for sticking footer to the bottom of the page */
+html, body {height: 100%;}
+#wrap {min-height: 100%;}
+#main {overflow:auto; padding-bottom: 5%;}  /* must be same height as the footer */
+#footer {position: relative; margin-top: -5%; /* negative value of footer height */ height: 5%; clear:both;}
 /*Opera Fix*/
-body:before {
-    content:"";
-    height:100%;
-    float:left;
-    width:0;
-    margin-top:-32767px;/
-}
+body:before {content:""; height:100%; float:left; width:0; margin-top:-32767px;/}
