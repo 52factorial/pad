@@ -23,6 +23,11 @@ h1 {
 
 nav a:link, nav a:visited {
     color:#FF9900;
+    text-decoration: none;
+}
+
+nav {
+    font-family: 'Source Code Pro', monospace;
 }
 
 .hidden {
