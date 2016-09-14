@@ -25,10 +25,13 @@ nav a:link, nav a:visited {
     color:#FF9900;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Styles for sticking footer to the bottom of the page */
+/**{margin: 0}
 html, body {height: 100%;}
-#wrap {min-height: 100%;}
-#main {overflow:auto; padding-bottom: 5%;}  /* must be same height as the footer */
-#footer {position: relative; margin-top: -5%; /* negative value of footer height */ height: 5%; clear:both;}
-/*Opera Fix*/
-body:before {content:""; height:100%; float:left; width:0; margin-top:-32767px;/}
+#wrap {min-height: 100%;margin-bottom:-33px;}
+#wrap:after{content: ""; display: block;}
+#footer, #wrap:after{height: 30px}*/
