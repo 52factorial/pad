@@ -5,9 +5,10 @@ var url = require('url');
 var port = process.env.PORT || 8000;
 
 http.createServer(function(request, response){
-    fs.readFile('./html/' + request.url, function(error, data){
+    empty = request.url === '/';
+    fs.readFile('./html/' + (empty ? 'index.html' : request.url), function(error, data){
         if(!error) {
-            var dotoffset = request.url.lastIndexOf('.');
+            var dotoffset = (empty ? '.html' : request.url.lastIndexOf('.'));
             var mimetype = dotoffset == -1 ? 'text/plain' :
                 {
                     '.html' : 'text/html',
