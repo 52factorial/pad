@@ -15,21 +15,23 @@
                     <a href="main.html">PAD</a>
                 </nav>
             </header>
-
             <div id="main">
-                <section>
+                <section id="description">
                     <h1>Descrição</h1>
-                    <p>Essa página tem o objetivo de emular as funcionalidades da PAD original.</p>
-                    <p>Mais detalhes soon &trade;.</p>
+                    <div class="hidden" id="description-body">
+                        <p>Essa página tem o objetivo de emular as funcionalidades da PAD original.</p>
+                        <p>Mais detalhes soon &trade;.</p>
+                    </div>
                 </section>
 
-                <section>
+                <section id="first-steps">
                     <h1>Primeiros Passos</h1>
-                    <p>Passo a passo detalhado depois que tiver alguma coisa.</p>
+                    <div class="hidden" id="first-steps-body">
+                        <p>Passo a passo detalhado depois que tiver alguma coisa.</p>
+                    </div>
                 </section>
 
                 <section>
-                    <p>Agora uma foto:</p>
                     <img alt="" src="https://unsplash.it/800/600"/>
                 </section>
             </div>
@@ -39,5 +41,21 @@
                 <strong>&copy; 2016</strong>
             </footer>
         </div>
+        <script>
+         let description = document.getElementById("description");
+         let first_steps = document.getElementById("first-steps");
+
+         description.addEventListener("click", showBody);
+         first_steps.addEventListener("click", showBody);
+
+         function showBody()
+         {
+             body = document.getElementById(this.id+'-body');
+             if(body.className === "hidden")
+                 body.className = "";
+             else
+                 body.className = "hidden";
+         }
+        </script>
     </body>
 </html>
